@@ -1129,8 +1129,13 @@ type KeysBoughtAt = Partial<Record<Keys, { boughtAt: number }>>;
 type Stores = "factionShop" | "treasureShop" | "megastore";
 export type KeysBought = Record<Stores, KeysBoughtAt>;
 
+export type Bank = {
+  taxFreeSFL: number;
+};
+
 export interface GameState {
   home: Home;
+  bank: Bank;
 
   rewards: Rewards;
 

@@ -357,6 +357,7 @@ export const INITIAL_FARM: GameState = {
   previousInventory: {},
   wardrobe: {},
   previousWardrobe: {},
+  bank: { taxFreeSFL: 0 },
 
   bumpkin: INITIAL_BUMPKIN,
 
@@ -588,6 +589,7 @@ export const TEST_FARM: GameState = {
     choresSkipped: 0,
   },
   stock: INITIAL_STOCK(),
+  bank: { taxFreeSFL: 0 },
   chickens: {},
   experiments: [],
   farmActivity: {},
@@ -871,6 +873,7 @@ export const EMPTY: GameState = {
   },
   bumpkin: INITIAL_BUMPKIN,
   rewards: INITIAL_REWARDS,
+  bank: { taxFreeSFL: 0 },
   experiments: [],
   minigames: {
     games: {},
